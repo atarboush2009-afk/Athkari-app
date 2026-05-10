@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق أذكاري - Athkari</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            max-width: 400px;
+            width: 90%;
+        }
+        img.app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        h1 { margin: 0.5rem 0; font-size: 2rem; }
+        p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; }
+        .play-button img {
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .play-button img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://play-lh.googleusercontent.com/v8pL6Y7S0pM3pM4qXJ-R9V9P2Qp1Xk6Y" class="app-icon" alt="أذكاري">
+        
+        <h1>تطبيق أذكاري</h1>
+        <p>رفيقك اليومي للأذكار، التسبيح ومواقيت الصلاة. تصميم عصري وبدون إعلانات مزعجة.</p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.ahmadtarboush.athkari" class="play-button" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+        </a>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة &copy; 2024 - أذكاري Athkari
+    </footer>
+
+</body>
+</html>
