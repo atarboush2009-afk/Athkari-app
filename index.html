@@ -32,12 +32,19 @@
 
         /* تأثير النص الذهبي اللامع */
         .gold-text {
-            background: linear-gradient(to right, var(--gold-light), var(--gold-primary), var(--gold-dark));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            display: inline-block;
-        }
+    background: linear-gradient(to right, var(--gold-light), var(--gold-primary), var(--gold-dark));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    
+    /* 👇 الإصلاحات الجديدة من هون 👇 */
+    vertical-align: middle;  /* 1. تنزيل حرف 'أ' عشان يستوي مع باقي السطر */
+    padding-bottom: 10px;    /* 2. إضافة مساحة تحت الكلمة عشان تطلع نقاط الـ 'ي' */
+    margin-bottom: -10px;    /* 3. إلغاء تأثير المساحة السفلية على باقي الموقع */
+    line-height: 1;          /* 4. ضبط ارتفاع السطر للكلمة عشان ما تتقطع */
+}
+
 
         /* شريط التنقل (العلوي) */
         header {
